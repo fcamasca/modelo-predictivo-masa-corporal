@@ -54,10 +54,8 @@ Modelo Predictivo de Masa Corporal/
 │
 ├── reports/
 │   ├── Modelo Predictivo de Masa Corporal.pdf
-│   ├── PACE - Modelo Predictivo de Masa Corporal.docx
 │   ├── PACE - Modelo Predictivo de Masa Corporal.pdf
 │   ├── Resume Ejecutivo.pdf
-│   └── Resume Ejecutivo.pptx
 │
 ├── images/
 │   ├── dispersion_por_pares.png
