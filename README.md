@@ -128,10 +128,12 @@ Requisitos completos en:\
 
 ## 📬 Autor
 
-**Frankz Camasca**\
-Analista de Datos \| Data Analytics & Predictive Modeling\
-GitHub: [@fcamasca](https://github.com/fcamasca)
-🔗 LinkedIn: [frankz-william-camasca-castillo](https://www.linkedin.com/in/frankz-william-camasca-castillo-b63a0094)
+**Frankz Camasca**  
+Analista de Datos \| Data Analytics & Predictive Modeling  
+
+[![GitHub](https://img.shields.io/badge/GitHub-%40fcamasca-black?logo=github)](https://github.com/fcamasca)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Frankz%20Camasca-blue?logo=linkedin)](https://www.linkedin.com/in/frankz-william-camasca-castillo-b63a0094)
+
 
 
 ------------------------------------------------------------------------
