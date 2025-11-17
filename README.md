@@ -131,6 +131,7 @@ Requisitos completos en:\
 **Frankz Camasca**\
 Analista de Datos \| Data Analytics & Predictive Modeling\
 GitHub: [@fcamasca](https://github.com/fcamasca)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/frankz-william-camasca-castillo-b63a0094)
+🔗 LinkedIn: [frankz-william-camasca-castillo](https://www.linkedin.com/in/frankz-william-camasca-castillo-b63a0094)
+
 
 ------------------------------------------------------------------------
