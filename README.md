@@ -1,139 +1,157 @@
 # 🐧 Modelo Predictivo de Masa Corporal en Pingüinos
-
-**EDA + Regresión Lineal \| Proyecto de Análisis Predictivo**
+**EDA + Regresión Lineal | Proyecto de Análisis Predictivo**
 
 ![Status](https://img.shields.io/badge/EDA-Complete-brightgreen)
 ![Model](https://img.shields.io/badge/Model-LinearRegression-blue)
-
-------------------------------------------------------------------------
-
-## 🧠 Sobre el Proyecto
-
-Este proyecto aplica un enfoque analítico orientado a negocio para
-evaluar si una única medida morfométrica ---la longitud del pico
-(*bill_length_mm*)--- puede estimar con precisión la masa corporal de un
-pingüino.
-
-El objetivo es demostrar cómo un análisis simple puede generar **modelos
-predictivos efectivos**, interpretables y reproducibles, útiles para
-contextos científicos, operativos o educativos.
-
-El proceso incluyó: - Exploración de correlaciones y relaciones entre
-variables físicas\
-- Identificación de patrones y distribución del dataset
-- Construcción de un modelo de regresión lineal (OLS)
-- Validación de supuestos estadísticos
-- Comunicación ejecutiva mediante un *one-pager* visual
-
-El modelo final explica el **76.9% de la variabilidad** de la masa
-corporal.
-
-------------------------------------------------------------------------
-
-## 📊 Principales Resultados
-
--   Relación lineal fuerte entre la longitud del pico y la masa
-    corporal.
--   Cada 1 mm adicional en el pico incrementa **\~141 g** de peso
-    corporal.
--   R² = **0.769** confirma un modelo sólido.
--   La longitud de la aleta también muestra correlación relevante, útil
-    para futuros modelos multivariables.
-
-------------------------------------------------------------------------
-
-## 🗂️ Estructura del Repositorio
-
-    modelo-predictivo-masa-corporal/
-    │
-    ├── data/
-    │   └── penguins.csv
-    │
-    ├── notebooks/
-    │   └── Modelo Predictivo de Masa Corporal.ipynb
-    │
-    ├── reports/
-    │   ├── PACE - Modelo Predictivo de Masa Corporal.pdf
-    │   ├── Resumen_Ejecutivo.pdf
-    │   └── Modelo Predictivo de Masa Corporal.pdf
-    │
-    ├── images/
-    │   └── gráficos usados en el one-pager
-    │
-    ├── requirements.txt
-    │
-    └── README.md
-
-------------------------------------------------------------------------
-
-## 📄 Documentos del Proyecto
-
-  -------------------------------------------------------------------------------------------------------------
-  Tipo                         Archivo
-  ---------------------------- --------------------------------------------------------------------------------
-  📘 Notebook interactivo      [Modelo Predictivo de Masa
-                               Corporal.ipynb](notebooks/Modelo%20Predictivo%20de%20Masa%20Corporal.ipynb)
-
-  📄 PACE (Metodología)        [PACE - Modelo
-                               Predictivo](reports/PACE%20-%20Modelo%20Predictivo%20de%20Masa%20Corporal.pdf)
-
-  📊 Resumen Ejecutivo         [Resumen Ejecutivo](reports/Resume%20Ejecutivo.pdf) (One-Pager)                  
-
-  🗂 Dataset                    [penguins.csv](data/penguins.csv)
-  -------------------------------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-## 🧪 Tecnologías y Librerías
-
--   Python 3
--   Pandas
--   NumPy
--   Seaborn
--   Matplotlib
--   Statsmodels
--   Scikit-Learn
--   Jupyter Notebook
-
-Requisitos completos en:\
-📦 **requirements.txt**
-
-------------------------------------------------------------------------
-
-## 📈 Visualizaciones
-
-### 🔹 Pairplot — Relación entre variables morfométricas
-<img src="images/dispersion_por_pares.png" width="450px">
-
-**Muestra relaciones lineales claras entre medidas corporales, destacando la utilidad predictiva de la longitud del pico.**
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Last Update](https://img.shields.io/badge/Last_Update-2025-lightgrey)
 
 ---
 
-### 🔹 Regresión Lineal — Longitud del Pico vs Masa Corporal
+## 🧠 Sobre el Proyecto
+
+Este proyecto analiza si las características morfométricas de pingüinos permiten **estimar la masa corporal** mediante un modelo simple, interpretable y reproducible.
+
+El análisis sigue un enfoque profesional orientado a decisiones, permitiendo identificar rápidamente **el predictor más importante** dentro del dataset.
+
+Incluye:
+
+- Exploración del dataset *Palmer Penguins*  
+- Análisis de correlaciones y patrones  
+- Modelo de regresión lineal OLS  
+- Validación de supuestos estadísticos  
+- Documentación ejecutiva (PACE + One Pager)  
+
+El modelo explica **76.9% de la variabilidad** de la masa corporal usando una sola variable.
+
+---
+
+## 🔑 Insight Clave
+
+> **La longitud del pico es el predictor más fuerte de masa corporal, con una relación lineal positiva y altamente consistente.**
+
+---
+
+## 📊 Principales Resultados
+
+- Cada **1 mm adicional** en longitud del pico incrementa en promedio **≈141 g** la masa corporal.
+- R² = **0.769**, confirmando buen ajuste y poder explicativo.
+- Los supuestos del modelo (linealidad, normalidad, independencia, homocedasticidad) se cumplen satisfactoriamente.
+- La longitud de la aleta también muestra correlación útil para futuros modelos multivariables.
+
+---
+
+## 🗂️ Estructura del Repositorio
+
+```
+Modelo Predictivo de Masa Corporal/
+│
+├── data/
+│   └── penguins.csv
+│
+├── notebooks/
+│   └── Modelo Predictivo de Masa Corporal.ipynb
+│
+├── reports/
+│   ├── Modelo Predictivo de Masa Corporal.pdf
+│   ├── PACE - Modelo Predictivo de Masa Corporal.docx
+│   ├── PACE - Modelo Predictivo de Masa Corporal.pdf
+│   ├── Resume Ejecutivo.pdf
+│   └── Resume Ejecutivo.pptx
+│
+├── images/
+│   ├── dispersion_por_pares.png
+│   ├── grafico_q-q.png
+│   ├── histograma_de_residuos.png
+│   ├── linea_de_regresion.png
+│   └── valores_ajustados_vs_residuos.png
+│
+├── requirements.txt
+│
+└── EXECUTIVE_SUMMARY.md
+```
+
+---
+
+## 📄 Documentos del Proyecto
+
+| Tipo | Archivo |
+|------|---------|
+| 📘 Notebook interactivo | [Modelo Predictivo de Masa Corporal.ipynb](notebooks/Modelo%20Predictivo%20de%20Masa%20Corporal.ipynb) |
+| 📄 PACE (Metodología) | [PACE - Modelo Predictivo de Masa Corporal.pdf](reports/PACE%20-%20Modelo%20Predictivo%20de%20Masa%20Corporal.pdf) |
+| 📊 Resumen Ejecutivo | [Resume Ejecutivo.pdf](reports/Resume%20Ejecutivo.pdf) |
+| 🗂 Dataset | [penguins.csv](data/penguins.csv) |
+
+---
+
+## 🔧 Cómo Ejecutar el Proyecto
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/fcamasca/modelo-predictivo-masa-corporal.git
+   ```
+2. **Crear entorno virtual (opcional)**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate     # Linux/Mac
+   venv\Scripts\activate       # Windows
+   ```
+3. **Instalar dependencias**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Abrir el notebook**
+   ```bash
+   jupyter notebook notebooks/Modelo Predictivo de Masa Corporal.ipynb
+   ```
+
+---
+
+## 🧪 Tecnologías y Librerías
+
+- Python 3  
+- Pandas  
+- NumPy  
+- Seaborn  
+- Matplotlib  
+- Statsmodels  
+- Jupyter Notebook  
+
+Requisitos completos en  
+📦 **requirements.txt**
+
+---
+
+## 📈 Visualizaciones
+
+### 🔹 Pairplot — Relaciones morfométricas  
+<img src="images/dispersion_por_pares.png" width="450px">
+
+---
+
+### 🔹 Regresión Lineal — Longitud del Pico vs Masa Corporal  
 <img src="images/linea_de_regresion.png" width="450px">
 
-**Confirma una relación lineal positiva y sólida: picos más largos se asocian con mayor masa corporal.**
-
-
-------------------------------------------------------------------------
+---
 
 ## 🚀 Próximos Pasos
 
--   Integrar variables adicionales para un análisis multivariable.
--   Evaluar diferencias predictivas por especie.
--   Construir un dashboard interactivo para estimación rápida.
--   Probar modelos no lineales o machine learning para comparación.
+- Construir modelo multivariable.  
+- Evaluar diferencias predictivas por especie.  
+- Probar modelos no lineales para comparación.  
+- Crear dashboard interactivo.  
 
-------------------------------------------------------------------------
+---
 
 ## 📬 Autor
 
 **Frankz Camasca**  
-Analista de Datos \| Data Analytics & Predictive Modeling  
+Analista de Datos | Data Analytics & Predictive Modeling  
 
-[![GitHub](https://img.shields.io/badge/GitHub-%40fcamasca-black?logo=github)](https://github.com/fcamasca)
+[![GitHub](https://img.shields.io/badge/GitHub-%40fcamasca-black?logo=github)](https://github.com/fcamasca)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Frankz%20Camasca-blue?logo=linkedin)](https://www.linkedin.com/in/frankz-william-camasca-castillo-b63a0094)
 
+---
 
-
-------------------------------------------------------------------------
+## 📄 Licencia
+Proyecto de uso educativo y demostración profesional.
